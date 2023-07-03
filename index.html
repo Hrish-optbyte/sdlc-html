@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+    <div class="wrapper bg-white">
+        <div id="login">
+            <div class="container">
+                <div class="row align-items-center justify-content-md-center py-4 h-100">
+                    <div class="col-12 d-none d-lg-block  col-lg-6 col-xl-6">
+
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"> <img src="./assets/img/image-1.png" alt="" class="w-85"></div>
+                            <div class="item"> <img src="./assets/img/image-2.png" alt="" class="w-85"></div>
+                            <div class="item"> <img src="./assets/img/image-3.png" alt="" class="w-85"></div>
+                            <div class="item"> <img src="./assets/img/image-7.png" alt="" class="w-85"></div>
+                            <div class="item"> <img src="./assets/img/image-8.png" alt="" class="w-85"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-9 col-lg-6 col-xl-6">
+                        <div class="col-12 col-md-12 col-lg-10 col-xl-8 d-block m-auto">
+                            <div class="mb-4">
+                                <h3 class="font-36 text-title">Get Started Now 👋</h3>
+                                <p class="font-18 text-title">Enter your credentials to access your account
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label text-title">Name</label>
+                                <input type="email" class="form-control " id="exampleFormControlInput1"
+                                    placeholder="Any Joy">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label text-title">Email</label>
+                                <input type="email" class="form-control " id="exampleFormControlInput1"
+                                    placeholder="Example@email.com">
+                                <div id="emailHelp" class="form-text text-end font-15 text-link my-3">Forgot Password?
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="button" class="btn btn-primary bo-radius-12 height-55 font-20 w-100">Sign
+                                    in</button>
+
+                            </div>
+
+                            <div class="border-bottom position-relative my-5"><span
+                                    class="position-absolute top-50 start-50 translate-middle py-2 px-4 bg-white text-title">Or</span>
+                            </div>
+
+                            <div class="social-buttons">
+                                <button
+                                    class="btn btn-light my-2 w-100 py-2 font-16 bo-radius-12 height-50 bg-gray-light">
+                                    <img src="./assets/img/google.svg" height="25" class="me-2" alt=""> Sign in with
+                                    Google</button>
+                                <button
+                                    class="btn btn-light my-2 w-100 py-2 font-16 bo-radius-12 height-50 bg-gray-light">
+                                    <img src="./assets/img/microsoft.svg" alt="" class="me-2" height="25"> Sign in with
+                                    Microsoft</button>
+                            </div>
+
+                            <p class="font-18 text-title text-center mt-4 mb-0">Don't you have an account? <span
+                                    class="text-link">Sign In</span> </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 10,
+            autoplay: false,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: false,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div id="sidenav-manu">
+            <div class="offcanvas offcanvas-start overflow-hidden" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header pb-0">
+                  <h5 class="offcanvas-title font-18 font-weight-500 border-bottom pb-2" id="offcanvasScrollingLabel">Configuration</h5>
+                  
+                </div>
+                <div class="offcanvas-body overflow-auto px-0">
+                    <div class="list-group rounded-0 border-0">
+                        <button type="button" class="list-group-item-title list-group-item-action border-0 text-uppercase font-weight-500" aria-current="true" >
+                            ADministration panel
+                        </button>
+                        <button type="button" class="list-group-item d-flex align-items-center list-group-item-action border-0 "><svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-2"><path d="M14 19a6 6 0 0 0-12 0"/><circle cx="8" cy="9" r="4"/><path d="M22 19a6 6 0 0 0-6-6 4 4 0 1 0 0-8"/></svg>Teams</button>
+                      </div>
+                      <div class="list-group rounded-0 border-0">
+                        <button type="button" class="list-group-item d-flex align-items-center-title list-group-item-action border-0 text-uppercase font-weight-500" aria-current="true" >
+                            USERS & PErmissions plugin
+                        </button>
+                        <button type="button" class="list-group-item d-flex align-items-center list-group-item-action border-0 active"><svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-cog-2"><path d="M14 19a6 6 0 0 0-12 0"/><circle cx="8" cy="9" r="4"/><circle cx="19" cy="11" r="2"/><path d="M19 8v1"/><path d="M19 13v1"/><path d="m21.6 9.5-.87.5"/><path d="m17.27 12-.87.5"/><path d="m21.6 12.5-.87-.5"/><path d="m17.27 10-.87-.5"/></svg>Profile setting</button>
+                        <button type="button" class="list-group-item d-flex align-items-center list-group-item-action border-0 "><svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-2"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>Advanced settings</button>
+                        <button type="button" class="list-group-item d-flex align-items-center list-group-item-action border-0 "><svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>Company Profile</button>
+                      </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div id="main-sidebar" class="bg-white overflow-hidden">
+                <div class="h-100 w-100 d-flex flex-column border-end bo-color-1 align-items-center overflow-auto">
+                    <div class="logo d-flex pt-2">
+                        <a href="">
+                            <img src="./assets/img/app-logo.svg" class="height-45 width-45" alt="" />
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column flex-grow-1 pt-3">
+                        <div
+                            class="btn-manu-requirement d-flex align-items-center justify-content-center rounded bg-bg-light-blue height-45 width-45 btn btn-text my-2"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Requirement"
+                        >
+                            <img src="./assets/img/requirement.svg" alt="" />
+                        </div>
+                        <div
+                            class="btn-manu-architecture d-flex align-items-center justify-content-center rounded bg-bg-light-blue height-45 width-45 btn btn-text my-2"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Architecture and Prototype"
+                        >
+                            <img src="./assets/img/architecture.svg" alt="" />
+                        </div>
+                        <div
+                            class="btn-manu-development d-flex align-items-center justify-content-center rounded bg-bg-light-blue height-45 width-45 btn btn-text my-2"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Development"
+                        >
+                            <img src="./assets/img/Development.svg" alt="" />
+                        </div>
+                        <div
+                            class="btn-manu-Approval d-flex align-items-center justify-content-center rounded bg-bg-light-blue height-45 width-45 btn btn-text my-2"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Approval"
+                        >
+                            <img src="./assets/img/Approval.svg" alt="" />
+                        </div>
+                        <div
+                            class="btn-manu-QA d-flex align-items-center justify-content-center rounded bg-bg-light-blue height-45 width-45 btn btn-text my-2"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="QA Tracker"
+                        >
+                            <img src="./assets/img/QA.svg" alt="" />
+                        </div>
+                        <div
+                            class="btn-manu-Deployment d-flex align-items-center justify-content-center rounded bg-bg-light-blue height-45 width-45 btn btn-text my-2"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Deployment"
+                        >
+                            <img src="./assets/img/Deployment.svg" alt="" />
+                        </div>
+                        <div
+                            class="btn-manu-timeseet d-flex align-items-center justify-content-center rounded bg-bg-light-blue height-45 width-45 btn btn-text my-2"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Timesheet"
+                        >
+                            <img src="./assets/img/timeseet.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="btn-manu-setting d-flex align-items-center justify-content-center rounded bg-bg-light-blue height-45 width-45 btn btn-text my-2"
+                           
+                            data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Configuration"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"
+                        >
+                            <img src="./assets/img/setting.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header border-bottom d-flex bg-white">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center position-relative justify-content-between">
+                        <div class="font-20 d-block d-lg-none text-primary menu-toggle btn btn-text">
+                            <img src="./assets/img/hamburger.svg" alt="" />
+                        </div>
+
+                        <p class="mb-0 font-16 font-weight-500 text-title d-lg-block d-none">OptByte Software Solutions Pvt. Ltd.</p>
+                    </div>
+
+                    <div class="right-list d-flex align-items-center">
+                        <div class="search px-2">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-gray-50 pe-0" id="basic-addon1"><img src="./assets/img/search.svg" height="20" alt="" /></span>
+                                <input type="text" class="form-control rounded-end-pill bg-gray-50 border-start-0" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" />
+                            </div>
+                        </div>
+                        <div class="Notification px-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn rounded-circle position-relative p-1 btn-text dropdown-toggle border-0" data-bs-auto-close="outside" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    <img src="./assets/img/Notification.svg" alt="mdo" width="24" height="24" class="" />
+                                    <span class="position-absolute top-0 start-100 translate-middle badge"> <img src="./assets/img/Notification-dot.gif" width="15" class="rounded-circle" height="15" alt="" /></span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-star end-0 mt-2 py-0 start">
+                                    <div class="card card-notification shadow-none border" style="width: 20rem;">
+                                        <div class="card-header bg-white border-0">
+                                            <div class="row justify-content-between align-items-center">
+                                                <div class="col-auto">
+                                                    <h6 class="card-header-title font-13 mb-0">Notifications</h6>
+                                                </div>
+                                                <div class="col-auto ps-0 ps-sm-3 font-13"><a class="card-link fw-normal text-decoration-none font-weight-500" href="#">Mark all as read</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-auto scoll" style="max-height: 20rem;">
+                                            <div class="list-group rounded-0 border-end-0 border-start-0 border-top-0">
+                                                <div class="list-group-title font-11 px-3 py-1 text-para font-weight-500 bg-gray-50">NEW</div>
+                                                <a href="#" class="list-group-item read border-end-0 border-start-0 list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" />
+                                                    <div class="d-flex gap-2 w-100 justify-content-between">
+                                                        <div>
+                                                            <h6 class="mb-0 font-13">List group item heading</h6>
+                                                            <p class="mb-0 opacity-75 font-13">Some placeholder content in a paragraph.</p>
+                                                        </div>
+                                                        <small class="opacity-50 font-11 text-nowrap">now</small>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="list-group-item read list-group-item-action d-flex gap-3 py-3 border-end-0 border-start-0" aria-current="true">
+                                                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" />
+                                                    <div class="d-flex gap-2 w-100 justify-content-between">
+                                                        <div>
+                                                            <h6 class="mb-0 font-13">Another title here</h6>
+                                                            <p class="mb-0 opacity-75 font-13">Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.</p>
+                                                        </div>
+                                                        <small class="opacity-50 font-11 text-nowrap">3d</small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group rounded-0 border-end-0 border-start-0 border-top-0">
+                                                <div class="list-group-title font-11 px-3 py-1 text-para font-weight-500 bg-gray-50">NEW</div>
+                                                <a href="#" class="list-group-item not-read border-end-0 border-start-0 list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" />
+                                                    <div class="d-flex gap-2 w-100 justify-content-between">
+                                                        <div>
+                                                            <h6 class="mb-0 font-13">List group item heading</h6>
+                                                            <p class="mb-0 opacity-75 font-13">Some placeholder content in a paragraph.</p>
+                                                        </div>
+                                                        <small class="opacity-50 font-11 text-nowrap">now</small>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="list-group-item not-read list-group-item-action d-flex gap-3 py-3 b border-end-0 border-start-0" aria-current="true">
+                                                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" />
+                                                    <div class="d-flex gap-2 w-100 justify-content-between">
+                                                        <div>
+                                                            <h6 class="mb-0 font-13">Another title here</h6>
+                                                            <p class="mb-0 opacity-75 font-13">Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.</p>
+                                                        </div>
+                                                        <small class="opacity-50 font-11 text-nowrap">3d</small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-center border-top">
+                                            <a class="font-13 font-weight-500 text-decoration-none d-block" href="../../app/social/notifications.html">Clear</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Profile ps-2 pe-0">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-text p-1 rounded-circle dropdown-toggle border-0" data-bs-auto-close="outside" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle" />
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-star end-0 mt-2 py-0 border start">
+                                    <div class="card border-0 shadow-none" style="width: 16.125rem;">
+                                        <div class="d-flex align-items-center p-2 border-bottom profile-avtar">
+                                            <div class="position-relative me-3">
+                                                <img src="./assets/img/1.jpg" width="40" height="40" class="rounded-circle" alt="" />
+                                                <span class="position-absolute bottom-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                                    <span class="visually-hidden">New alerts</span>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <p class="mb-0 font-14 font-weight-500">Olivia Rhye</p>
+                                                <p class="mb-0 font-14 font-weight-400">olivia@untitledui.com</p>
+                                            </div>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item font-14 dropdown-item border-0 text-gray-700"><img src="./assets/img/user-profile.svg" height="16" class="me-2" alt="" />View profile</li>
+                                            <li class="list-group-item font-14 dropdown-item text-gray-700"><img src="./assets/img/settings.svg" height="16" class="me-2" alt="" />Settings</li>
+                                            <li class="list-group-item font-14 dropdown-item border-0 text-gray-700"><img src="./assets/img/home-profile.svg" height="16" class="me-2" alt="" />Company profile</li>
+                                            <li class="list-group-item font-14 dropdown-item text-gray-700"><img src="./assets/img/teams-profile.svg" height="16" class="me-2" alt="" />Team</li>
+                                            <li class="list-group-item font-14 dropdown-item border-0 text-gray-700"><img src="./assets/img/log-out.svg" height="16" class="me-2" alt="" />Log out</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <main class="main-content">
+                <nav class="breadcrumb-custom border-bottom py-2" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" class="py-2">
+                    <div class="container">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item "><a href="#" class="font-14  text-decoration-none d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home me-1"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a></li>
+                      <li class="breadcrumb-item " aria-current="page">Setting</li>
+                      <li class="breadcrumb-item " aria-current="page">Account setting</li>
+                     
+                        <li class="breadcrumb-item active"><a href="#" class="font-14  text-decoration-none d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-circle-2 me-1"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg><span>My Profile</span></a></li>
+                     
+                    </ol>
+                    </div>
+                  </nav>
+                  <div class="py-4 border-bottom border-gray">                  
+                    <div class="container">
+                    <h3 class="font-18 font-weight-500 text-gray-900 mb-0 ">Account setting</h3>
+                  </div>
+                </div>
+
+                <div class="container">
+                    Main
+                </div>
+            </main>
+        </div>
+
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+            $(".menu-toggle").click(function (e) {
+                e.preventDefault();
+                $(".wrapper").toggleClass("toggled");
+            });
+            $(function () {
+                $('[data-bs-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </body>
+</html>

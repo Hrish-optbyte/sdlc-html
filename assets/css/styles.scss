@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "root";
+@import "mixin";
+
+$full-per: 100%;
+$vh: 100vh;
+
+$main-sidebar-width: 5rem;
+html {
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+  height: 100%;
+
+  body {
+    min-height: $vh;
+    font-size: var(--font-size);
+    margin: 0;
+    line-height: normal;
+    height: $full-per;
+    border-color: $gray-200;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $gray-50;
+    color: $para;
+    font-family: $font-family-Poppins;
+    font-size: 0.875rem;
+    overflow-x: hidden;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+    margin: 0px;
+    padding: 0px;
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+main {
+  min-height: calc(100vh - $nav-height - 2px);
+  position: relative;
+  background-color: $gray-50;
+}
+
+// -------------button---------------
+
+// button-color,font-size,border-size,border-color,text-color,border-radius,button-hover-color,button-active-color
+.btn.btn-primary {
+  @include btn(
+    $bg-color: $default,
+    $font-size: 1rem,
+    $border-size: 1px,
+    $border-color: $default,
+    $text-color: $white,
+    $corner: 0.375rem,
+    $hover-color: $primary-700,
+    $active-color: $primary-800,
+    $hover-text: $white,
+    $active-text: $white
+  );
+}
+.btn.btn-secondary {
+  @include btn(
+    $bg-color: $white,
+    $font-size: 1rem,
+    $border-size: 1px,
+    $border-color: $gray-200,
+    $text-color: $title,
+    $corner: 0.375rem,
+    $hover-color: $gray-100,
+    $active-color: $gray-200,
+    $hover-text: $title,
+    $active-text: $title
+  );
+}
+.btn.btn-primary-light {
+  @include btn(
+    $bg-color: $primary-50,
+    $font-size: 1rem,
+    $border-size: 0px,
+    $border-color: $default,
+    $text-color: $default,
+    $corner: 0.375rem,
+    $hover-color: $primary-100,
+    $active-color: $primary-200,
+    $hover-text: $default,
+    $active-text: $default
+  );
+}
+
+.btn.btn-primary-light {
+  @include btn(
+    $bg-color: $primary-50,
+    $font-size: 1rem,
+    $border-size: 0px,
+    $border-color: $default,
+    $text-color: $default,
+    $corner: 0.375rem,
+    $hover-color: $primary-100,
+    $active-color: $primary-200,
+    $hover-text: $default,
+    $active-text: $default
+  );
+}
+
+.btn.btn-text {
+  @include btn(
+    $bg-color: $body-transparent,
+    $border-size: 0px,
+    $border-color: $default,
+    $text-color: $default,
+    $corner: 0.375rem,
+    $hover-color: $gray-100,
+    $active-color: $gray-200,
+    $hover-text: $default,
+    $active-text: $default
+  );
+}
+// -------------end button---------------
+
+#login {
+  height: $full-per;
+
+  input.form-control {
+    color: $title;
+    background-color: $sky-light;
+    border: 1px solid $gray-300;
+    height: 3rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+
+    &:focus {
+      color: var(--bs-body-color);
+      background-color: var(--bs-body-bg);
+      border-color: var(--default);
+      outline: 0;
+      box-shadow: unset;
+    }
+  }
+  ::placeholder {
+    color: var(--gray-400);
+  }
+}
+
+.wrapper {
+  padding-left: $main-sidebar-width;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  &.toggled {
+    padding-left: 0;
+    .header {
+      width: calc(100% - 0rem);
+    }
+
+    #main-sidebar {
+      width: 0;
+    }
+  }
+
+  #main-sidebar {
+    z-index: 1050;
+    position: fixed;
+    left: $main-sidebar-width;
+    width: $main-sidebar-width;
+    height: 100%;
+    top: 0;
+    margin-left: -$main-sidebar-width;
+    overflow-y: auto;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    .btn-manu-requirement {
+      @include btn(
+        $bg-color: $body-transparent,
+        $border-size: 0px,
+        $hover-color: $warning-100,
+        $active-color: $warning-200
+      );
+    }
+    .btn-manu-architecture {
+      @include btn(
+        $bg-color: $body-transparent,
+        $border-size: 0px,
+        $hover-color: $success-100,
+        $active-color: $success-200
+      );
+    }
+    .btn-manu-development {
+      @include btn(
+        $bg-color: $body-transparent,
+        $border-size: 0px,
+        $hover-color: $error-100,
+        $active-color: $error-200
+      );
+    }
+    .btn-manu-Approval {
+      @include btn(
+        $bg-color: $body-transparent,
+        $border-size: 0px,
+        $hover-color: $primary-100,
+        $active-color: $primary-200
+      );
+    }
+    .btn-manu-QA {
+      @include btn(
+        $bg-color: $body-transparent,
+        $border-size: 0px,
+        $hover-color: $warning-100,
+        $active-color: $warning-200
+      );
+    }
+    .btn-manu-Deployment {
+      @include btn(
+        $bg-color: $body-transparent,
+        $border-size: 0px,
+        $hover-color: $success-100,
+        $active-color: $success-200
+      );
+    }
+    .btn-manu-timeseet {
+      @include btn(
+        $bg-color: $body-transparent,
+        $border-size: 0px,
+        $hover-color: $primary-100,
+        $active-color: $primary-200
+      );
+    }
+    .btn-manu-setting {
+      @include btn(
+        $bg-color: $body-transparent,
+        $border-size: 0px,
+        $hover-color: $gray-100,
+        $active-color: $gray-200
+      );
+    }
+    > div::-webkit-scrollbar {
+      width: 4px;
+      border-radius: 10px;
+      position: absolute;
+    }
+
+    /* Track */
+    > div::-webkit-scrollbar-track {
+      background: $body-transparent;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    > div::-webkit-scrollbar-thumb {
+      background: $gray-300;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    > div::-webkit-scrollbar-thumb:hover {
+      background: $gray-400;
+      border-radius: 10px;
+    }
+  }
+
+  nav {
+    &.header {
+      width: calc(100% - $main-sidebar-width);
+    }
+    &.header {
+      border-bottom-width: 1px;
+      border-color: var(--sd-border);
+      display: flex;
+      height: 61px;
+      width: 100%;
+      position: sticky;
+      right: 0;
+      top: 0;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+
+      z-index: 20;
+    }
+
+    .right-list {
+      .Profile,
+      .Notification {
+        .dropdown-toggle::after {
+          content: none;
+        }
+
+        .dropdown-menu {
+          right: 0;
+          left: auto !important;
+          box-shadow: $box-card;
+          border: 0;
+          .card {
+            .profile-avtar {
+              border-color: $gray-100 !important;
+            }
+            ul li {
+              border-color: $gray-100;
+            }
+            .list-group-item {
+              cursor: pointer;
+              &:hover {
+                background-color: $gray-200;
+              }
+              &:active {
+                background-color: $gray-300;
+                color: $title;
+              }
+            }
+          }
+        }
+      }
+
+      .Notification {
+        .dropdown-toggle::after {
+          content: none;
+        }
+        .scoll {
+          &::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 10px;
+            position: absolute;
+          }
+
+          /* Track */
+          &::-webkit-scrollbar-track {
+            background: $body-transparent;
+            border-radius: 10px;
+          }
+
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            background: $gray-300;
+            border-radius: 10px;
+          }
+
+          /* Handle on hover */
+          &::-webkit-scrollbar-thumb:hover {
+            background: $gray-400;
+            border-radius: 10px;
+          }
+
+          .list-group &:last-child {
+            border-width: 0 !important;
+          }
+          .list-group-item {
+            &.read {
+              background-color: $gray-100 !important;
+            }
+            &.not-read {
+              background-color: $white;
+            }
+          }
+        }
+      }
+      .search {
+        .input-group {
+          width: 20.125rem;
+          transition: all 0.5s ease;
+          &:hover {
+            width: 25.125rem;
+            transition: all 0.5s ease;
+          }
+          @media only screen and (max-width: $sm) {
+            width: 15.125rem !important;
+          }
+          input {
+            font-size: 0.9375rem;
+            border-color: $gray-200;
+            &:focus {
+              box-shadow: none;
+              border-color: $gray-200;
+            }
+            &::placeholder {
+              color: $para;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .account-setting {
+    min-height: calc(100vh - 180px);
+    display: grid;
+    &.card {
+      background-color: $white;
+      border: 0px;
+      .border-style {
+        border-right: 1px solid $gray-200;
+        @media only screen and (max-width: $sm) {
+          > .tab-custom {
+            border-bottom: 1px solid $gray-200;
+          }
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 4px;
+        height: 3px;
+        border-radius: 10px;
+        position: absolute;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: $body-transparent;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: $gray-300;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: $gray-400;
+        border-radius: 10px;
+      }
+      .tab-custom {
+        .nav-link {
+          display: block;
+          padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+          font-size: 0.875rem;
+          font-weight: 400;
+          text-align: start;
+          @extend .bo-radius-25;
+          text-wrap: nowrap;
+          color: $gray-400;
+          text-decoration: none;
+          background: 0 0;
+          border: 0;
+          width: fit-content;
+          margin: 3px 0px;
+          transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+          &.active {
+            background: $primary-100;
+            color: $default;
+          }
+          &:hover {
+            background: $primary-100;
+            color: $default;
+          }
+          &:active {
+            background: $primary-200;
+            color: $default;
+          }
+        }
+      }
+    }
+    .user-profile {
+      max-height: calc(100vh - 245px);
+      overflow-x: auto;
+      padding-right: 10px;
+    }
+
+    .setting-teams{
+      .team-tabs{
+        padding: 5px;
+        background-color: $gray-50;
+        border: 1px solid $gray-200;
+        @extend .bo-radius-4;
+        .nav-link {
+          display: block;
+          padding: 7px 15px;
+          font-size: 0.875rem;
+          font-weight: 500;
+          text-align: start;
+          @extend .bo-radius-4;
+          text-wrap: nowrap;
+          color: $para;
+          
+          text-decoration: none;
+          background: 0 0;
+          border: 0;
+          width: fit-content;
+          margin: 1px 2px;
+          transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+          &.active {
+            background: $white;
+            color: $title;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+
+          }
+          &:hover {
+            background: $white;
+            color: $title;
+            
+          }
+          &:active {
+            background: $white;
+            color: $title;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+          }
+        }
+      }
+      .search {
+      input.form-control{
+        &:focus{
+          box-shadow: none;
+          border-color: $gray-200;
+        }
+        &::placeholder{
+          color: $gray-400;
+        }
+      }
+    }
+    .card-list .list-grid {
+     
+&:nth-child(odd) .list {
+  background: $primary-100;
+}
+
+&:nth-child(even) .list{
+  background: $gray-100;
+}
+    
+
+
+    }
+  }
+  }
+  .Profile-completed-bar {
+    $borderWidth: 7px;
+    $animationTime: 1.5s;
+
+    $size: 80px;
+
+    //Create how many steps
+    $howManySteps: 10; //this needs to be even.
+    //for fun try using 20 and changine in the HTML the data-percentage to 15 or 85
+
+    .progress {
+      width: $size;
+      height: $size;
+      line-height: $size;
+      background: none;
+      margin: 0 auto;
+      box-shadow: none;
+      position: relative;
+      &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: $borderWidth solid $primary-100;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      > span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+      .progress-left {
+        left: 0;
+      }
+      .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: $borderWidth;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+        border-color: $default;
+      }
+      .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: ($size/2);
+        border-bottom-right-radius: ($size/2);
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+        //animation: loading-2 1.5s linear forwards 1.8s;
+      }
+      .progress-right {
+        right: 0;
+        .progress-bar {
+          left: -100%;
+          border-top-left-radius: ($size/2);
+          border-bottom-left-radius: ($size/2);
+          border-right: 0;
+          -webkit-transform-origin: center right;
+          transform-origin: center right;
+          //animation: loading-1 1.8s linear forwards;
+        }
+      }
+      .progress-value {
+        display: flex;
+        border-radius: 50%;
+        font-size: 16px;
+        text-align: center;
+        line-height: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-weight: 600;
+        width: 100%;
+      }
+    }
+
+    /* This for loop creates the 	necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+    @for $i from 1 through $howManySteps {
+      $stepName: ($i * (100 / $howManySteps));
+
+      //animation only the left side if below 50%
+      @if $i <= ($howManySteps/2) {
+        .progress[data-percentage="#{$stepName}"] {
+          .progress-right .progress-bar {
+            animation: loading-#{$i} $animationTime linear forwards;
+          }
+          .progress-left .progress-bar {
+            animation: 0;
+          }
+        }
+      }
+      //animation only the right side if above 50%
+      @if $i > ($howManySteps/2) {
+        .progress[data-percentage="#{$stepName}"] {
+          .progress-right .progress-bar {
+            animation: loading-#{($howManySteps/2)}
+              $animationTime
+              linear
+              forwards; //set the animation to longest animation
+          }
+          .progress-left .progress-bar {
+            animation: loading-#{$i -
+              ($howManySteps/2)}
+              $animationTime
+              linear
+              forwards
+              $animationTime;
+          }
+        }
+      }
+    }
+
+    //animation
+    @for $i from 1 through ($howManySteps/2) {
+      $degrees: (180/ ($howManySteps/2));
+      $degrees: ($degrees * $i);
+      @keyframes loading-#{$i} {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate($degrees);
+          transform: rotate(#{$degrees}deg);
+        }
+      }
+    }
+  }
+  .visibility-input {
+    label.form-label {
+      font-size: 14px;
+      color: $para;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      &.form-control {
+        &.not-visibility {
+          font-size: 16px;
+          font-weight: 500;
+          border-width: 0px 0px 1px 0px;
+          border-radius: 0;
+          border-style: solid;
+          border-color: $body-transparent;
+          padding-left: 0;
+          padding-right: 0;
+          &:hover {
+            border-width: 0px 0px 1px 0px;
+            border-radius: 0;
+            border-style: solid;
+            border-color: $default;
+          }
+          &:focus {
+            box-shadow: none;
+            border-width: 0px 0px 1px 0px;
+            border-radius: 0;
+            border-style: solid;
+            border-color: $default;
+          }
+          &::placeholder {
+            font-weight: 300;
+            color: $gray-400;
+          }
+        }
+      }
+    }
+  }
+}
