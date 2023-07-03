@@ -392,7 +392,10 @@ main {
 
   .account-setting {
     min-height: calc(100vh - 180px);
-    display: grid;
+    // display: grid;
+    .row{
+      min-height: inherit;
+    }
     &.card {
       background-color: $white;
       border: 0px;

@@ -2530,7 +2530,9 @@ main {
 }
 .wrapper .account-setting {
   min-height: calc(100vh - 180px);
-  display: grid;
+}
+.wrapper .account-setting .row {
+  min-height: inherit;
 }
 .wrapper .account-setting.card {
   background-color: #ffffff;
